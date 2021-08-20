@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 20: expected statement.
+    출처: https://askance.tistory.com/81?category=387312 [백안시의 공방 - 소설형 게임 제작실]
+      ^
+
+Ren'Py Version: Ren'Py 7.4.7.1862
+Wed Aug  4 16:36:32 2021
