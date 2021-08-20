@@ -1,4 +1,9 @@
 ﻿# 이 파일에 게임 스크립트를 입력합니다.
+init:
+    image sv normal = "steve 1.png"
+    image sv surprise = "steve 2.png"
+    
+
 init python:
      #대화창에 선택지.
     menu = nvl_menu
