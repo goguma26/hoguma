@@ -64,4 +64,4 @@ label prolog:
     g "행복한 하루 되세요."
     "(딸랑)"
     return
-hsjcwbcbwui
+jsxbwjcbwjbdc
