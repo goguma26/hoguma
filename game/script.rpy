@@ -34,6 +34,14 @@ label start:
     s "그럼 지금이라도 그 프로그램을 넣자!"
     e "지난주부터 생산 시작했다고 했죠?"
     s "응 그랬지"
+    e ""
+    s ""
+    e ""
+    s ""
+    e ""
+    s ""
+    e ""
+    s ""
     jump prolog
 
 label prolog:
