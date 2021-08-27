@@ -5,15 +5,13 @@ init:
     image bg lab1 = "bg lab 1.png"
 
 init python:
-     #대화창에 선택지.
-    menu = nvl_menu
+
      #대화창 x축 마진.
     style.nvl_window.ymargin = 540
 
-# image 문을 사용해 이미지를 정의합니다.
-# image eileen happy = "eileen_happy.png"
 
-# 게임에서 사용할 캐릭터를 정의합니다.
+
+# 게임에서 사용할 캐릭터
 define s = Character('Dr.Steve')
 define e = Character('이브')
 define g = Character('강서진')
