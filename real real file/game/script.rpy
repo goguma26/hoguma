@@ -12,7 +12,7 @@ init python:
 
 
 # 게임에서 사용할 캐릭터
-define s = Character('Dr.Steve')
+define s = Character('Dr.Steve', image = "sv")
 define e = Character('이브')
 define g = Character('강서진')
 define q = Character('???')
@@ -20,8 +20,8 @@ define p = Character('쌤 1')
 # 여기에서부터 게임이 시작합니다.
 label start:
     "서기 2186년 "
-    show sv normal at right
-    s " 하아….이제는 뭐하고 살아야하는 거지? rmb은행에서는 계속 빚갚으라며 난리고, 저 고철들은 시끄럽게 소리내고."
+    scene bg lab1
+    s  normal " 하아….이제는 뭐하고 살아야하는 거지? rmb은행에서는 계속 빚갚으라며 난리고, 저 고철들은 시끄럽게 소리내고."
     s "이 이많은 로봇들을 모두 어떻게 해야하는거야… 만들기는 많이 만들었는데   사는 사람은 없고... 과거의 나 대체 무슨짓을 한거야!"
     "3년전..."
     s "이브! 내가 만든 로봇이 지난주부터 대량 생산에 들어갔다고 연락이 온걸 지금 봤어! 이제우리는 현유회사를 이기고 부자가 되는걸 기다리고 있으면돼!"
