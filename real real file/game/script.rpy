@@ -129,4 +129,4 @@ label iphaksik
     e "...!"
     e "어! 접니다! 죄송합니다..."
 
-abcdefg
+    ㄱㄴㄷㄻㅄ
