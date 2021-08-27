@@ -128,3 +128,5 @@ label iphaksik
     #이브가 놀란다
     e "...!"
     e "어! 접니다! 죄송합니다..."
+
+abcdefg
