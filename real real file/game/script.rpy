@@ -9,7 +9,7 @@ init python:
 
      #대화창 x축 마진.
     style.nvl_window.ymargin = 540
-
+    config.searchpath.extend(['game\sound', 'game\image', 'game\music'])
 
 
 # 게임에서 사용할 캐릭터
@@ -105,6 +105,7 @@ label prolog:
             g "'뭐지? 내가 뭐 잘못했나? 왜이렇게 기분나빠보이지?'"
             g "행복한 하루 되세요."
             "(딸랑)"
+            jump iphaksik
             return
 label iphaksik
     g "아 5분만 더... 엥 벌써 시간이 8시 40분?"
