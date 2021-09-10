@@ -1,7 +1,7 @@
-﻿﻿# 이 파일에 게임 스크립트를 입력합니다.
 init:
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
+    image ev normal = "ev 1.png"
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
 
@@ -15,7 +15,7 @@ init python:
 
 # 게임에서 사용할 캐릭터
 define s = Character('Dr.Steve', image = "sv")
-define e = Character('이브')
+define e = Character('이브', image = "ev")
 define k = Character('김지민')#이브 가명
 define g = Character('강서진')
 define q = Character('???')
@@ -24,23 +24,39 @@ define m = Character('물리학과 교수')
 define sm = Character('생물학과 교수')
 # 여기에서부터 게임이 시작합니다.
 label start:
-    play music "dawnstar.mp3"
     "서기 2186년 "
     scene bg lab1
-    s normal" 하아….이제는 뭐하고 살아야하는 거지? rmb은행에서는 계속 빚갚으라며 난리고, 저 고철들은 시끄럽게 소리내고."
+    show sv normal
+    s " 하아….이제는 뭐하고 살아야하는 거지? rmb은행에서는 계속 빚갚으라며 난리고, 저 고철들은 시끄럽게 소리내고."
     s "이 이많은 로봇들을 모두 어떻게 해야하는거야… 만들기는 많이 만들었는데   사는 사람은 없고... 과거의 나 대체 무슨짓을 한거야!"
     scene bg black
     "3년전..."
     scene bg lab1
-    stop music "dawnstar.mp3"
+    show sv normal
     s "이브! 내가 만든 로봇이 지난주부터 대량 생산에 들어갔다고 연락이 온걸 지금 봤어! 이제우리는 현유회사를 이기고 부자가 되는걸 기다리고 있으면돼!"
+    hide sv normal
+    show ev normal
     e "축하드립니다 박사님. 이제 이것으로 많은 사람들이 박사님의 로봇을 사용하겠군요. 그리고 연락은 제발 제때받으라고 제가 항상 말씀드리지 않습니까?"
+    hide ev normal
+    show sv normal
     s "알았어~ 조심한다고 했잖아. 그리고 이브 너도 수고했어. 나중에 돈들어오면 수고했으니까 네 부품을 더 좋은 부품으로 바꾸어 해줄게."
+    hide sv normal
+    show ev normal
     e "감사합니다. 그것보다 샘플로봇은 작동시켜보셨나요? 전부터 제가 말씀 드렸지만 인공지능부분이 아직 미약합니다. 그래서 제가 꼭 입력해야한다고 말했던 제가 만든 프로그램은 넣으셨나요?"
+    hide ev normal
+    show sv surprise
     s "응? 그런게 있었어?"
+    hide sv normal
+    show ev normal
     e "… 박사님 혹시 모르셨나요?"
+    hide ev normal
+    show sv normal
     s "당연하지. 내가 카페인을 얼마나 먹으면서 살았는데, 솔직히 로봇 만들던 시절에 다른사람한테서 이야기를 들은게 하나도 기억이 안나."
+    hide sv normal
+    show ev normal
     e "그러면 프로그램을 입력하지 않으셨던 거네요?"
+    hide ev normal
+    show sv normal
     s "이브 잠시만 그 주먹내려줄수있겠어? 그래도 내가 만든 로봇은 내구도가 엄청나다고."
     e "박사님, 제가 누누히 말씀 드렸지만 가정용로봇 만드신다면서요. 그럼 내구도는 딱히 상관없어요."
     s "그, 그럼 군인 로봇으로 팔자! 내구도가 엄청나니까 전쟁무기로 쓰기 좋을거야!"
