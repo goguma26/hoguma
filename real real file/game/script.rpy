@@ -102,9 +102,9 @@ label prolog:
             g "'이번에도 혼잣말을 하는데... 이건 뭐라하는지 잘 안들리네.'"
             q "후... 제게 시간이 별로 없습니다. 이걸로 살수있는 건 전부 주세요."
             g "'대사만 보면 뭔 돈가방을 내려놓으면서 말할것 같지만... 이사람은 왜 500원짜리 동전하나를 주면서 이런말을 할까. 일단 계산은 해야겠지.'"
-            play music "bacord.mp3"
+            play music "bacord.mp3" fadeout 0.75
             "삑."#효과음 넣어라
-            play music "bacord.mp3"
+            play music "bacord.mp3" fadeout 0.75
             "삑."
             g "여기 막대사탕 2개, 합쳐서 500원 딱 되네요. "
             q "예?"
