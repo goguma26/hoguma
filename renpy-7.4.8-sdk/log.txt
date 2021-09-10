@@ -1,20 +1,38 @@
+<<<<<<< Updated upstream
 Fri Sep 10 15:09:35 2021
+=======
+Fri Sep 10 14:15:36 2021
+>>>>>>> Stashed changes
 Windows-8.1-6.3.9600
 Ren'Py 7.4.8.1895
  
 
+<<<<<<< Updated upstream
 Bootstrap to the start of init.init took 0.55s
 Early init took 0.02s
 Loader init took 0.18s
 Loading error handling took 0.05s
 Loading script took 0.85s
+=======
+Bootstrap to the start of init.init took 0.39s
+Early init took 0.00s
+Loader init took 0.10s
+Loading error handling took 0.05s
+Loading script took 0.92s
+>>>>>>> Stashed changes
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Set script version to: None (alternate path)
+<<<<<<< Updated upstream
  - Init at launcher/game/web.rpyc:26 took 0.43631 s.
 Running init code took 1.13s
 Loading analysis data took 0.07s
+=======
+ - Init at launcher/game/web.rpyc:26 took 0.42330 s.
+Running init code took 1.08s
+Loading analysis data took 0.09s
+>>>>>>> Stashed changes
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Dump and make backups. took 0.00s
@@ -24,14 +42,18 @@ Initial gc. took 0.05s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.08s
 Build styles took 0.01s
 Load screen analysis took 0.06s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
+<<<<<<< Updated upstream
 Prepare screens took 0.14s
+=======
+Prepare screens took 0.15s
+>>>>>>> Stashed changes
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
