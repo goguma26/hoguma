@@ -2,6 +2,7 @@ init:
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
     image ev normal = "ev 1.png"
+    image sangmul normal = "sangmul 1.pmg"
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
 
@@ -36,29 +37,14 @@ label start:
     scene bg lab1
     show sv normal
     s "이브! 내가 만든 로봇이 지난주부터 대량 생산에 들어갔다고 연락이 온걸 지금 봤어! 이제우리는 현유회사를 이기고 부자가 되는걸 기다리고 있으면돼!"
-    hide sv normal
     show ev normal
     e "축하드립니다 박사님. 이제 이것으로 많은 사람들이 박사님의 로봇을 사용하겠군요. 그리고 연락은 제발 제때받으라고 제가 항상 말씀드리지 않습니까?"
-    hide ev normal
-    show sv normal
     s "알았어~ 조심한다고 했잖아. 그리고 이브 너도 수고했어. 나중에 돈들어오면 수고했으니까 네 부품을 더 좋은 부품으로 바꾸어 해줄게."
-    hide sv normal
-    show ev normal
     e "감사합니다. 그것보다 샘플로봇은 작동시켜보셨나요? 전부터 제가 말씀 드렸지만 인공지능부분이 아직 미약합니다. 그래서 제가 꼭 입력해야한다고 말했던 제가 만든 프로그램은 넣으셨나요?"
-    hide ev normal
-    show sv surprise
     s "응? 그런게 있었어?"
-    hide sv normal
-    show ev normal
     e "… 박사님 혹시 모르셨나요?"
-    hide ev normal
-    show sv normal
     s "당연하지. 내가 카페인을 얼마나 먹으면서 살았는데, 솔직히 로봇 만들던 시절에 다른사람한테서 이야기를 들은게 하나도 기억이 안나."
-    hide sv normal
-    show ev normal
     e "그러면 프로그램을 입력하지 않으셨던 거네요?"
-    hide ev normal
-    show sv normal
     s "이브 잠시만 그 주먹내려줄수있겠어? 그래도 내가 만든 로봇은 내구도가 엄청나다고."
     e "박사님, 제가 누누히 말씀 드렸지만 가정용로봇 만드신다면서요. 그럼 내구도는 딱히 상관없어요."
     s "그, 그럼 군인 로봇으로 팔자! 내구도가 엄청나니까 전쟁무기로 쓰기 좋을거야!"
@@ -87,7 +73,6 @@ label start:
     e "ㅎ"
     s "ㅎ"
     jump prolog
-    call iphaksik
 
 label prolog:
     "서기 2021 지구"
@@ -152,6 +137,7 @@ label iphaksik:
             g "저쪽인가?"
             "생물학과 교실"
             g "와 저 실험쥐들 진짜 불쌍하다..."
+            show sangmul normal
             sm "너 뭐냐. 우리과면 들어와라"
             g "옙"
             sm "너 이름이 뭐야."
@@ -183,9 +169,9 @@ label Physics:
     m "출석부터 부르고 시작할까?"
     m "강서진"
     g "네!"
-    m "고구마"
+    "고구마" "고구마"
     고구마 "네!"
-    m "하리보"
+    "하리보""하리보"
     하리보 "응애!"
     m "김지민"
     "... ..."
