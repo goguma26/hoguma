@@ -5,6 +5,8 @@ init:
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
 
+    define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
+
 
 init python:
 
@@ -79,7 +81,6 @@ label start:
     s "그,그래 수고했어 이브. 근데미안해… 우리 광고비밖에 회수못했어"
     e "하아"
     play music "fishing"
-    "()"
     s "ㅎ"
     e "ㅎ"
     s "ㅎ"
@@ -142,7 +143,7 @@ label iphaksik:
     menu:
         "물리학과":
             g "음...물리학과였지? 왜 기억이 잘 안나냐..."
-            jump Physics
+            call Physics
             return
 
         "생물학과":
@@ -153,22 +154,24 @@ label iphaksik:
             sm "너 뭐냐. 우리과면 들어와라"
             g "옙"
             sm "너 이름이 뭐야."
-            g "강세진 입니다."
-            sm "... " #폰을 보면서 #이 생물학쌤이 가장 매력적인 캐릭터이면 좋겠음 물론 출연은 여기서 밖에 안함(젊음) 히든 엔딩에 생물쌤 출연좀
+            g "강서진 입니다."
+            sm "... " #폰을 보면서 #이 생물학쌤이 가장 매력적인 캐릭터이면 좋겠음 히든 엔딩에 생물쌤 출연좀
             sm "니이름 없는데? 너 물리학과야."
             g "에?"
             sm "빨리 달려가라."
             g "으아아아 늦었다아아"
+            $sangmul+=1
             jump Physicslate
             return
 
 label Physicslate:
     g "헉 헉. 아 힘들어. 첫인상이 중요한데 교수님이 나 어떻게 생각하시려나. "
     "드르륵"
-    m "뭐야 강세진. 왜 이제야와."
+    m "뭐야 강서진. 왜 이제야와."
     g "죄송합니다."
     m "아까 그 뭐냐 걔 있잖아."
     m "어 김지민. 걔도 그렇고 오늘 얘들상태 왜이러냐."
+    return
 
 
 label Physics:
@@ -190,5 +193,6 @@ label Physics:
     k "...!"
     k "어! 접니다! 죄송합니다..."
     g "'뭐야 쟤이름이 김지민이구나.'"
+    return
 
     #~
