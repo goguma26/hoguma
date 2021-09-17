@@ -5,7 +5,7 @@ init:
     image sangmul normal = "sangmul 1.pmg"
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
-    
+
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
 
@@ -170,10 +170,10 @@ label Physics:
     m "출석부터 부르고 시작할까?"
     m "강서진"
     g "네!"
-    "고구마" "고구마"
-    고구마 "네!"
-    "하리보""하리보"
-    하리보 "응애!"
+    m "고구마"
+    "고구마" "네!"
+    m "하리보"
+    "하리보" "응애!"
     m "김지민"
     "... ..."
     m "뭐야... 없어?"
