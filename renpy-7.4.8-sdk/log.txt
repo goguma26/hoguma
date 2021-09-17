@@ -1,20 +1,20 @@
-Fri Sep 17 13:44:56 2021
+Fri Sep 17 14:22:46 2021
 Windows-8.1-6.3.9600
 Ren'Py 7.4.8.1895
  
 
-Bootstrap to the start of init.init took 0.41s
+Bootstrap to the start of init.init took 0.44s
 Early init took 0.01s
-Loader init took 0.25s
+Loader init took 0.24s
 Loading error handling took 0.10s
-Loading script took 2.25s
-Loading save slot metadata. took 0.04s
+Loading script took 2.45s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Set script version to: None (alternate path)
- - Init at launcher/game/web.rpyc:26 took 0.94999 s.
-Running init code took 2.36s
-Loading analysis data took 0.13s
+ - Init at launcher/game/web.rpyc:26 took 0.92368 s.
+Running init code took 2.42s
+Loading analysis data took 0.15s
 Analyze and compile ATL took 0.02s
 Index archives took 0.00s
 Dump and make backups. took 0.00s
@@ -28,15 +28,15 @@ Creating interface object took 0.01s
 Cleaning stores took 0.00s
 Init translation took 0.10s
 Build styles took 0.01s
-Load screen analysis took 0.13s
+Load screen analysis took 0.12s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.38s
+Prepare screens took 0.44s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.16s
+Interface start took 0.14s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
