@@ -5,6 +5,7 @@ init:
     image sangmul normal = "sangmul 1.pmg"
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
+    
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
 
