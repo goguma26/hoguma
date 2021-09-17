@@ -87,6 +87,7 @@ label start:
     e "ㅎ"
     s "ㅎ"
     jump prolog
+    call iphaksik
 
 label prolog:
     "서기 2021 지구"
