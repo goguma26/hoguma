@@ -1,43 +1,42 @@
-Fri Sep 17 13:32:32 2021
+Fri Sep 17 13:44:56 2021
 Windows-8.1-6.3.9600
 Ren'Py 7.4.8.1895
  
 
-Bootstrap to the start of init.init took 0.21s
+Bootstrap to the start of init.init took 0.41s
 Early init took 0.01s
-Loader init took 0.13s
-Loading error handling took 0.05s
-Loading script took 0.93s
-Loading save slot metadata. took 0.01s
+Loader init took 0.25s
+Loading error handling took 0.10s
+Loading script took 2.25s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Set script version to: None (alternate path)
- - Init at launcher/game/gui7.rpyc:25 took 0.25618 s.
- - Init at launcher/game/web.rpyc:26 took 1.12280 s.
-Running init code took 2.70s
-Loading analysis data took 0.16s
+ - Init at launcher/game/web.rpyc:26 took 0.94999 s.
+Running init code took 2.36s
+Loading analysis data took 0.13s
 Analyze and compile ATL took 0.02s
 Index archives took 0.00s
 Dump and make backups. took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.08s
+Initial gc. took 0.07s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.14s
-Build styles took 0.02s
-Load screen analysis took 0.16s
-Analyze screens took 0.01s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.13s
+Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.48s
+Prepare screens took 0.38s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.14s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -49,4 +48,3 @@ Version: '4.2.0 - Build 10.18.10.3368'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1200, 900) drawable=(1200, 900)
 Maximum texture size: 4096x4096
-6
