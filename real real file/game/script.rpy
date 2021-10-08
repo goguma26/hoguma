@@ -2,6 +2,7 @@ init:
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
     image ev normal = "ev 1.png"
+    image mulli normal = "mulli 1.png"
     image sangmul normal = "sangmul 1.pmg"
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
@@ -90,6 +91,8 @@ label start:
     "띠링"
     s "오! 국립 과학 연구원에서 알람이 왔네. 뭐야? 잠깐이지만 인공 소형 블랙홀을 유지하는 기술을 발명했다고?"
     e "잡생각 하지말고 쓰레기를 어떻게 버릴지나 생각하시죠. 일반적으로 버리기에는 재료가 재료인지라 처리비용이 굉장히 많이 나갈테니까요."
+    hide ev normal
+    hide sv normal
     jump prolog
 
 label prolog:
@@ -170,8 +173,10 @@ label iphaksik:
             return
 
 label Physicslate:
+    hide sangmul normal
     g "헉 헉. 아 힘들어. 첫인상이 중요한데 교수님이 나 어떻게 생각하시려나. "
     "드르륵"
+    show mulli normal
     m "뭐야 강서진. 왜 이제야와."
     g "죄송합니다."
     m "아까 그 뭐냐 걔 있잖아."
