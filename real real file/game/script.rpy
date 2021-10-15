@@ -1,9 +1,20 @@
 init:
+    image sj normal = "sj 1.png"
+
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
+
     image ev normal = "ev 1.png"
+    image ev ssanle = "ev 2.png"
+    image ev mad = "ev 3.png"
+    image ev anxious = "ev 4.png"
+
+    image dang normal = "dang 1.png"
+
     image mulli normal = "mulli 1.png"
+
     image sangmul normal = "sangmul 1.pmg"
+
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
 
@@ -27,7 +38,6 @@ define q = Character('???')
 define t = Character('쌤 1')
 define m = Character('물리학과 교수')
 define sm = Character('생물학과 교수')
-define n = character('고양이')
 # 여기에서부터 게임이 시작합니다.
 label start:
     "서기 2186년 "

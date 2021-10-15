@@ -9,6 +9,25 @@ init offset = -1
 ## 스타일
 ################################################################################
 
+define config.mouse = { }
+define config.mouse['default'] = [ ( "mause.png", 0, 0) ]
+define config.mouse['spin' ] = [
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+    ( "mause.png", 7, 7 ),
+]
+
+
+
+
+
+
+
 style default:
     properties gui.text_properties()
     language gui.language
