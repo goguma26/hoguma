@@ -317,7 +317,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("시작하기") action Start()
+            textbutton _("Start") action Start()
 
         else:
 
@@ -325,9 +325,9 @@ screen navigation():
 
             textbutton _("저장하기") action ShowMenu("save")
 
-        textbutton _("불러오기") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("환경설정") action ShowMenu("preferences")
+        textbutton _("Settings") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -337,18 +337,18 @@ screen navigation():
 
             textbutton _("메인 메뉴") action MainMenu()
 
-        textbutton _("버전정보") action ShowMenu("about")
+        textbutton _("Version") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## 도움말 메뉴는 모바일 디바이스와 맞지 않아 불필요합니다.
-            textbutton _("조작방법") action ShowMenu("help")
+            textbutton _("Function") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("종료하기") action Quit(confirm=not main_menu)
+            textbutton _("Exit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
