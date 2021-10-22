@@ -30,7 +30,7 @@ init python:
 
 
 # 게임에서 사용할 캐릭터
-define s = Character('Dr.Steve', image = "sv")
+define s = Character('Dr.Steve', image = "sv", ctc = "mause.png")
 define e = Character('이브', image = "ev")
 define k = Character('김지민')#이브 가명
 define g = Character('강서진')
