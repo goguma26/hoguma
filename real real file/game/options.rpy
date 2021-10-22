@@ -11,7 +11,7 @@
 ##
 ## 문자열을 _()로 둘러 쌓으면 씌우면 번역의 대상으로 표시됩니다.
 
-define config.name = _("real real file")
+define config.name = _("copy")
 
 
 ## 위에 주어진 제목이 주 메뉴 화면에 표시되는지 결정합니다. 제목을 숨기려면 이것
@@ -35,7 +35,7 @@ define gui.about = _p("""
 ## 배포판의 실행 파일과 디렉토리에 사용되는 게임의 약식 이름. 이것은 ASCII 전용
 ## 이어야 하며 공백, 콜론 또는 세미콜론을 포함해서는 안 됩니다.
 
-define build.name = "realrealfile"
+define build.name = "copy"
 
 
 ## 음악과 음향 ######################################################################
@@ -46,6 +46,7 @@ define build.name = "realrealfile"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+
 
 
 ## 사용자가 음향 또는 음성 채널에서 테스트 사운드를 재생할 수 있게 하려면 아래
@@ -116,7 +117,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## 기본 글자 속도를 제어합니다. 기본적으로, 0은 즉시이며 다른 숫자는 초당 입력
 ## 할 문자 수입니다.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 45
 
 
 ## 기본 auto-forward 지연 시간입니다. 숫자가 클수록 대기 시간이 길어지며, 0 ~ 30
@@ -139,7 +140,7 @@ default preferences.afm_time = 15
 ## 이것은 일반적으로 변경해서는 안 되며, 항상 표현형식이 아닌 정확한 문자열이어
 ## 야 합니다.
 
-define config.save_directory = "realrealfile-1629439804"
+define config.save_directory = "copy-1630042302"
 
 
 ## Icon ########################################################################
