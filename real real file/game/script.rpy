@@ -3,6 +3,7 @@ init:
 
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
+    image sv cry = "sv 3.png"
 
     image ev normal = "ev 1.png"
     image ev ssanle = "ev 2.png"
@@ -30,10 +31,15 @@ init python:
 
 
 # 게임에서 사용할 캐릭터
+<<<<<<< Updated upstream
 define s = Character('Dr.Steve', image = "sv", ctc = "mause.png")
 define e = Character('이브', image = "ev")
+=======
+define s = Character('Dr.Steve', image = 'sv')
+define e = Character('이브', image = 'ev')
+>>>>>>> Stashed changes
 define k = Character('김지민')#이브 가명
-define g = Character('강서진')
+define g = Character('강서진', image = 'sj')
 define q = Character('???')
 define t = Character('쌤 1')
 define m = Character('물리학과 교수')
@@ -170,7 +176,7 @@ label iphaksik:
             "생물학과 교실"
             g "와 저 실험쥐들 진짜 불쌍하다..."
             show sangmul normal
-            sm "너 뭐냐. 우리과면 들어와라"
+            sm "너 뭐냐, 우리과면 들어와라."
             g "옙"
             sm "너 이름이 뭐야."
             g "강서진 입니다."

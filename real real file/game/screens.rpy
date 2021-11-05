@@ -28,6 +28,8 @@ define config.mouse['spin' ] = [
 
 
 
+
+
 style default:
     properties gui.text_properties()
     language gui.language
@@ -368,31 +370,48 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+init:
+
+    # 메인 메뉴에서 쓸 배경.
+    # x위치 -33 에서 0으로 반복해서 움직일 뿐이지만
+    # 그냥 보기에는 무한히 오른쪽으로 움직이는 것처럼 보임
+    image bg mainmenu:
+        "game bg.png"
+
+        on replaced: # game menu 스크린과 교체될 때는
+            alpha 1 # 그냥 투명도값 100%
+
+
+
+
 screen main_menu():
 
-    ## This ensures that any other menu screen is replaced.
+ # This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    # The background of the main menu.
+    #window:
+        #style "mm_root"
 
-    ## This empty frame darkens the main menu.
+    #위 init 블록에서 지정했던 메인 메뉴 배경화면
+    add 'bg mainmenu'
+
+    # 메인 메뉴 버튼
     frame:
-        style "main_menu_frame"
+        # 메인메뉴 버튼에 적용되는 스타일에 mm이라는 접두어를 붙임
+        style_group 'mm'
 
-    ## use 명령어로 스크린 내에 다른 스크린을 불러옵니다. 메인 메뉴 스크린의 내
-    ## 용물은 navigation 스크린에 있습니다.
-    use navigation
+        # style_group 적용하려고 만든거라 배경 화면은 투명하게
+        background '#fff0'
 
-    if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+        textbutton "새로 시작" action Start() xpos 370 ypos 520
+        textbutton "이어서 하기" action ShowMenu("load") xpos 580 ypos 520
+        textbutton "나가기" action Quit(confirm=False) xpos 830 ypos 520
 
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+init python:
+        style.mm_button_text.size = 40
+        style.mm_button.size_group = "mm"
 
 
 style main_menu_frame is empty
@@ -405,7 +424,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "game bg.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -1151,7 +1170,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "gui/overlay/confir.png"
 
     frame:
 
@@ -1169,7 +1188,7 @@ screen confirm(message, yes_action, no_action):
                 spacing 100
 
                 textbutton _("네") action yes_action
-                textbutton _("아니오") action no_action
+                textbutton _("아니요") action no_action
 
     ## 우클릭과 esc는 '아니오'를 입력하는 것과 같습니다.
     key "game_menu" action no_action
