@@ -23,6 +23,7 @@ init:
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
     image bg store = "bg convenient.png"
+    image bg Gguboom = "bg GguExpl"
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
     define call=0 #전화번호 얻기
@@ -372,7 +373,7 @@ label chapter first:
                 g "ㅇㅇ"
                 e "잠깐... 내가지금 에너지가 많이 부족해서 충전을 해야하거든? 혹시 어디 충전할수 있는곳이 있니?"
                 g "갑자기 폰을 급하게 충전해야할 이유는?"
-                e "폰이아니라 나. 날 충정해야해"
+                e "폰이아니라 나. 날 충전해야해"
                 g "???"
                 g "니가 뭔 미래에서온 로봇이라도 돼?
                 e "그러면 어쩔건데?"
@@ -397,7 +398,7 @@ label chapter first:
                 jump ending1
                 return
                 #엔딩 1 지구파괴
-
+                scene
 
 
 
@@ -515,4 +516,3 @@ label sangmul chater1:
     sm "어! 그래 그여자를 찾아가."
     g "아니 거의 일주일이 지났는데 어떯게 찾... 아 메일주소있다"
     sm "그 여자를 찾아서 이 지구를 지켜주게."
-    
