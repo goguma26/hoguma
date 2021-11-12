@@ -23,6 +23,7 @@ init:
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
     image bg store = "bg convenient.png"
+    image bg Gguboom = "bg GguExpl.png"
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
     define call=0 #전화번호 얻기
