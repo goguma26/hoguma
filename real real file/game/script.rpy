@@ -23,6 +23,7 @@ init:
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
     image bg store = "bg convenient.png"
+    image bg Gguboom = "bg GguExpl.png"
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
     define call=0 #전화번호 얻기
@@ -395,75 +396,7 @@ label chapter first:
                 g "으아아ㅏ아앙ㄱ"
                 jump ending1
                 return
+
+label past remember
                 #엔딩 1 지구파괴
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-label sangmul chater1:
-    "5일후"
-    "띠리릴리리리ㅣ"
-    g "아 주말인데 왜 전화가..."
-    q "혹시 강서진 학생 맞나?"
-    g "누구시죠?"
-    sm "생물학교 교수인데, 지금 야생동물들의 움직임이 심상치 않아. 지구에 뭔일이 일어난게 틀림없어."
-    g "어... 그래서 왜 저에게 전화를?"
-    sm "내 앵무새가 말해주길, 자네가 알고있는 어떤 사람때문에 이 일이 일어났다고 하더군."
+                scene bg Gguboom
