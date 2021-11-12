@@ -313,7 +313,7 @@ label Physics:
     k "어! 접니다! 죄송합니다..."
     g "'뭐야 쟤이름이 김지민이구나.'"
     g "?"
-
+    g "뭐야 그 편이점에서 라이터 뿌순사람!젠장 피해보상 받아야하는데."
     return
 
 label chapter first:
