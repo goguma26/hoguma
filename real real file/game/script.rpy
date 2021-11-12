@@ -1,5 +1,8 @@
 init:
     image sj normal = "sj 1.png"
+    image sj smile = "sj 2.png"
+    image sj ggachil = "sj 3.png"
+    image sj saAk = "sj 4.png"
 
     image sv normal = "sv 1.png"
     image sv surprise = "sv 2.png"
@@ -19,7 +22,7 @@ init:
 
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
-
+    image bg store = "bg convenient.png"
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
 
@@ -129,6 +132,7 @@ label start:
 
 label prolog:
     "서기 2021 지구"
+    scene bg store
     "한남자가 편의점에서 일을하고있다."
     menu:
 
@@ -168,6 +172,7 @@ label prolog:
             play sound "bacord.mp3"
             "삑."
             g "여기 막대사탕 2개, 합쳐서 500원 딱 되네요. "
+            show ev anxious
             q "예?"
             g "영수증드릴까요?"
             q "아뇨, 필요없어요."
