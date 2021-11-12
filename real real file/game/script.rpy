@@ -23,7 +23,7 @@ init:
     image bg lab1 = "bg lab 1.png"
     image bg black = "bg black.png"
     image bg store = "bg convenient.png"
-    image bg Gguboom = "bg GguExpl"
+    image bg Gguboom = "bg GguExpl.png"
 
     define sangmul=0 #생물학과 교수 이벤 .1일경우 일어남
     define call=0 #전화번호 얻기
@@ -398,9 +398,9 @@ label chapter first:
                 jump ending1
                 return
                 #엔딩 1 지구파괴
-                scene
+                scene bg Gguboom
 
-label past remember
+label past remember:
     "과거회상"
     s "그럼 블랙홀에다 버리자! 블랙홀이라면 아무도 모르게 이 로봇들을 처리할 수 있을거야!"
     e "흠... 가능만 하다면 괜찮은 대안일 것 같습니다만... 가능할까요?"
